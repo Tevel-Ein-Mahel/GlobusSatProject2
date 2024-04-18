@@ -1,4 +1,5 @@
-#include <EPS.h>
+#include "EPS.h"
+#include <satellite-subsystems/GomEPS.h>
 
 /*
 * EPS.c
@@ -7,10 +8,26 @@
  *      Author: hp
  */
 
+Boolean GomEPSInit(void);
+
 int EPS_Init()
 {
 	Boolean b = GomEPSInit();
 	return b;
+}
+
+int EPS_Conditioning()
+{
+	// TODO: get code from Demo code
+}
+
+int GetBatteryVoltage(voltage_t *vbat)
+{
+	gom_eps_hk_t response;
+}
+
+voltage_t GetFiltered_Voltage()
+{
 }
 
 Boolean GomEPSInit(void)
