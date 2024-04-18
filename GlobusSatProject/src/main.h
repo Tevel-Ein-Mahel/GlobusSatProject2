@@ -15,7 +15,8 @@ Boolean GroundCommunicationWDTKick();
  *  @note the function must use an infinite loop at its base;
  *  according to the logic and FreeRTOS thread requirements
  */
-void taskmain();
+void
+();
 
 /*!
  * This is the main function of the satellite operation
