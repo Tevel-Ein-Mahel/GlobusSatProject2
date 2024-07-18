@@ -1,0 +1,177 @@
+#include <satellite-subsystems/IsisTRXVU.h>
+#include <hal/Timing/Time.h>
+#include <string.h>
+#include <stdlib.h>
+#include <CommandDictionary.h>
+#include "GlobalStandards.h"
+#include "SatCommandHandler.h"
+#include "SPL.h"
+#include "utils.h"
+
+int ParseDataToCommand(unsigned char * data, sat_packet_t *cmd)
+{
+	if(NULL == data || NULL == cmd){
+			return null_pointer_error;
+		}
+		void *err = NULL;
+
+		unsigned int offset = 0;
+
+		unsigned int id = 0;
+		err = memcpy(&id,data,sizeof(id));
+		if (NULL == err) {
+			return execution_error;
+		}
+		offset += sizeof(id);
+
+
+		if (id>>24 != CUBE_SAT_ID && id>>24 != ALL_SAT_ID){
+			return invalid_sat_id;
+		}
+
+
+		char type;
+		err = memcpy(&type,data+offset,sizeof(type));
+		if (NULL == err) {
+			return execution_error;
+		}
+		offset += sizeof(type);
+
+		char subtype;
+		err = memcpy(&subtype, data + offset,sizeof(subtype));
+		if (NULL == err) {
+			return execution_error;
+		}
+		offset += sizeof(subtype);
+
+		unsigned short data_length = 0;
+		err = memcpy(&data_length, data + offset,sizeof(data_length));
+			if (NULL == err) {
+				return execution_error;
+			}
+		offset += sizeof(data_length);
+
+		return AssembleCommand(data+offset,data_length,type,subtype,id,cmd);
+}
+int AssembleCommand(unsigned char *data, unsigned short data_length, char type,
+		char subtype, unsigned int id, sat_packet_t *cmd)
+{
+	if (NULL == cmd) {
+		return null_pointer_error;
+	}
+	cmd->ID = id;
+	cmd->cmd_type = type;
+	cmd->cmd_subtype = subtype;
+	cmd->length = 0;
+
+	if (NULL != data) {
+
+		unsigned short size = 0;
+		if (data_length > MAX_COMMAND_DATA_LENGTH){
+			logError(SPL_DATA_TOO_BIG , "AssembleCommand");
+			return execution_error;
+		}else{
+			size = data_length;
+		}
+
+
+		cmd->length = size;
+		void *err = memcpy(cmd->data, data, size);
+
+		if (NULL == err) {
+			return execution_error;
+		}
+	}
+	return command_succsess;
+}
+
+int ActUponCommand(sat_packet_t *cmd){
+	if (cmd == NULL)
+		return null_pointer_error;
+	int err = 0;
+	switch(cmd->cmd_type){
+	case trxvu_cmd_type:
+		err = trxvu_command_router(cmd);
+		break;
+	default:
+		return no_command_found;
+	}
+	return err;
+
+}
+
+/*
+Yamen code
+#include "SatCommandHandler.h"
+#include "string.h"
+#include "SPL.h"
+
+int ParseDataToCommand(unsigned char * data, sat_packet_t *cmd)
+{
+    // not finished yet
+
+    // Adi code - start 
+    if (data == NULL || cmd == NULL)
+    {
+        return null_pointer_error;
+    }
+    void *err = NULL;
+    int id, offset;
+
+    offset += sideof(id);
+
+    if (id >> 24 != MAHEL_SAT_ID && id >> 24 != ALL_SAT_ID)
+    {
+        return invalid_sat_id;
+    }
+
+    // ADi code - end
+
+
+    // CHAT GPT - code - start
+    // Extract the ID (32 bits)
+    memcpy(&cmd->ID, data, sizeof(cmd->ID));
+    
+    // Extract the command type (8 bits)
+    cmd->cmd_type = data[4];
+    
+    // Extract the command subtype (8 bits)
+    cmd->cmd_subtype = data[5];
+    
+    // Extract the length (16 bits)
+    memcpy(&cmd->length, &data[6], sizeof(cmd->length));
+    
+    // Ensure the length does not exceed the maximum allowed length
+    if (cmd->length > MAX_COMMAND_DATA_LENGTH) {
+        cmd->length = MAX_COMMAND_DATA_LENGTH;
+    }
+
+    // Extract the data field (variable length)
+    memcpy(cmd->data, &data[8], cmd->length);
+    // CHAT GPT - code - end
+
+}
+
+int AssembleCommand(unsigned char *data, unsigned short data_length, char type, char subtype,unsigned int id, sat_packet_t *cmd)
+{
+
+}
+
+int ActUponCommand(sat_packet_t *cmd)
+{
+    int err = 0;
+    if (cmd == NULL)
+    {
+        return null_pointer_error;
+    }
+
+    switch (cmd->cmd_type)
+    {
+        case trxvu_cmd_type: 
+            err = trxvu_cmd_router(cmd);
+            break;
+
+    }
+}
+
+*/
