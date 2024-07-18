@@ -17,8 +17,7 @@
 #include "AckHandler.h"
 #include "SubsystemCommands/TRXVU_Commands.h"
 #include "TLM_management.h"
-
-#include "SubSystemModules/PowerManagement/EPS.h"
+#include "SubSystemModules/PowerManagment/EPS.h"
 #include "SubSystemModules/Maintenance/Maintenance.h"
 #include "SubSystemModules/Housekepping/TelemetryCollector.h"
 
@@ -124,4 +123,22 @@ int GetOnlineCommand(sat_packet_t *cmd){
 	logError(IsisTrxvu_rcGetCommandFrame(0, &rxFrameCmd),"IsisTrxvu_rcGetCommandFrame err");
 	int err = ParseDataToCommand(rxFrameCmd.rx_framedata, cmd);
 	return err;
+}
+
+int TransmitSplPacket(sat_packet_t *packet, int *avalFrames)
+{
+    if (packet == NULL || avalFrames == NULL)
+        return null_pointer_error;
+
+    int length = sizeof(packet->ID)             +
+                 sizeof(packet->cmd_type)       +
+                 sizeof(packet->cmd_subtype)    +
+                 sizeof(packet->length)         +
+                 packet->length;
+
+    unsigned char avail = 0;
+    int err = logError(IsisTrxvu_tcSendAX25DefClSign(0, (unsigned char *) packet, length, &avail), "IsisTrxvu_tcSendAX25DefClSign");
+    *avalFrames = avail;
+
+    return err;              
 }
