@@ -1,0 +1,34 @@
+16:23:05 **** Incremental Build of configuration Debug for project GlobusSatProject ****
+make -r -k all 
+Building file: ../src/SubSystemModules/Communication/SatCommandHandler.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -std=c99 -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra  -g -std=c99 -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//satellite-subsystems/satellite-subsystems/include" -I"C:\ISIS\ein-mahel3\GlobusSatProject\src" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hcc/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/freertos/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hal/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/at91/include" -MMD -MP -MF"src/SubSystemModules/Communication/SatCommandHandler.d" -MT"src/SubSystemModules/Communication/SatCommandHandler.d" -c -o "src/SubSystemModules/Communication/SatCommandHandler.o" "../src/SubSystemModules/Communication/SatCommandHandler.c"
+Finished building: ../src/SubSystemModules/Communication/SatCommandHandler.c
+ 
+Building target: GlobusSatProject.elf
+Invoking: Cross ARM C Linker
+arm-none-eabi-gcc -mcpu=arm926ej-s -std=c99 -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra  -g -std=c99 -T C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/at91/linker-scripts/sdram.lds -nostartfiles -Xlinker --gc-sections -L"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/at91/lib" -L"C:/ISIS/ein-mahel3/GlobusSatProject/..//satellite-subsystems/satellite-subsystems/lib" -L"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hcc/lib" -L"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/freertos/lib" -L"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hal/lib" -Wl,-Map,"GlobusSatProject.map" -lc -u _printf_float -u _scanf_float -o "GlobusSatProject.elf"  ./src/SubSystemModules/PowerManagment/EPS.o  ./src/SubSystemModules/Communication/AckHandler.o ./src/SubSystemModules/Communication/CommandDictionary.o ./src/SubSystemModules/Communication/SatCommandHandler.o ./src/SubSystemModules/Communication/TRXVU.o  ./src/InitSystem.o ./src/TLM_Management.o ./src/main.o   -lHALD -lHCCD -lSatelliteSubsystemsD -lFreeRTOSD -lAt91D
+./src/SubSystemModules/PowerManagment/EPS.o: In function `GomEPSInit':
+C:\ISIS\ein-mahel3\GlobusSatProject\Debug/../src/SubSystemModules/PowerManagment/EPS.c:43: undefined reference to `TRACE_ERROR'
+./src/SubSystemModules/Communication/SatCommandHandler.o: In function `AssembleCommand':
+C:\ISIS\ein-mahel3\GlobusSatProject\Debug/../src/SubSystemModules/Communication/SatCommandHandler.c:71: undefined reference to `logError'
+./src/SubSystemModules/Communication/TRXVU.o: In function `InitTrxvu':
+C:\ISIS\ein-mahel3\GlobusSatProject\Debug/../src/SubSystemModules/Communication/TRXVU.c:79: undefined reference to `logError'
+C:\ISIS\ein-mahel3\GlobusSatProject\Debug/../src/SubSystemModules/Communication/TRXVU.c:88: undefined reference to `logError'
+./src/SubSystemModules/Communication/TRXVU.o: In function `GetNumberOfFramesInBuffer':
+C:\ISIS\ein-mahel3\GlobusSatProject\Debug/../src/SubSystemModules/Communication/TRXVU.c:113: undefined reference to `logError'
+./src/SubSystemModules/Communication/TRXVU.o: In function `GetOnlineCommand':
+C:\ISIS\ein-mahel3\GlobusSatProject\Debug/../src/SubSystemModules/Communication/TRXVU.c:123: undefined reference to `logError'
+./src/InitSystem.o:C:\ISIS\ein-mahel3\GlobusSatProject\Debug/../src/InitSystem.c:31: more undefined references to `logError' follow
+./src/InitSystem.o: In function `InitSubsystems':
+C:\ISIS\ein-mahel3\GlobusSatProject\Debug/../src/InitSystem.c:68: undefined reference to `InitSavePeriodTimes'
+./src/TLM_Management.o: In function `InitializeFS':
+C:\ISIS\ein-mahel3\GlobusSatProject\Debug/../src/TLM_Management.c:16: undefined reference to `fs_init'
+C:\ISIS\ein-mahel3\GlobusSatProject\Debug/../src/TLM_Management.c:17: undefined reference to `ASSERT'
+C:\ISIS\ein-mahel3\GlobusSatProject\Debug/../src/TLM_Management.c:20: undefined reference to `ASSERT'
+collect2.exe: error: ld returned 1 exit status
+make: *** [GlobusSatProject.elf] Error 1
+make: Target `all' not remade because of errors.
+
+16:23:06 Build Finished (took 1s.173ms)
+

@@ -1,0 +1,471 @@
+16:17:29 **** Build of configuration Debug for project GlobusSatProject ****
+make -r -k all 
+Building file: ../src/SubSystemModules/PowerManagment/EPS.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -std=c99 -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra  -g -std=c99 -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//satellite-subsystems/satellite-subsystems/include" -I"C:\ISIS\ein-mahel3\GlobusSatProject\src" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hcc/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/freertos/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hal/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/at91/include" -MMD -MP -MF"src/SubSystemModules/PowerManagment/EPS.d" -MT"src/SubSystemModules/PowerManagment/EPS.d" -c -o "src/SubSystemModules/PowerManagment/EPS.o" "../src/SubSystemModules/PowerManagment/EPS.c"
+../src/SubSystemModules/PowerManagment/EPS.c: In function 'GetBatteryVoltage':
+../src/SubSystemModules/PowerManagment/EPS.c:26:15: warning: unused variable 'response' [-Wunused-variable]
+../src/SubSystemModules/PowerManagment/EPS.c:24:34: warning: unused parameter 'vbat' [-Wunused-parameter]
+../src/SubSystemModules/PowerManagment/EPS.c: In function 'GomEPSInit':
+../src/SubSystemModules/PowerManagment/EPS.c:43:3: warning: implicit declaration of function 'TRACE_ERROR' [-Wimplicit-function-declaration]
+../src/SubSystemModules/PowerManagment/EPS.c: In function 'GetFiltered_Voltage':
+../src/SubSystemModules/PowerManagment/EPS.c:31:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/SubSystemModules/PowerManagment/EPS.c: In function 'GetBatteryVoltage':
+../src/SubSystemModules/PowerManagment/EPS.c:27:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/SubSystemModules/PowerManagment/EPS.c: In function 'EPS_Conditioning':
+../src/SubSystemModules/PowerManagment/EPS.c:22:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/SubSystemModules/PowerManagment/EPS.c
+ 
+Building file: ../src/SubSystemModules/Communication/AckHandler.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -std=c99 -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra  -g -std=c99 -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//satellite-subsystems/satellite-subsystems/include" -I"C:\ISIS\ein-mahel3\GlobusSatProject\src" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hcc/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/freertos/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hal/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/at91/include" -MMD -MP -MF"src/SubSystemModules/Communication/AckHandler.d" -MT"src/SubSystemModules/Communication/AckHandler.d" -c -o "src/SubSystemModules/Communication/AckHandler.o" "../src/SubSystemModules/Communication/AckHandler.c"
+../src/SubSystemModules/Communication/AckHandler.c: In function 'SendAckPacket':
+../src/SubSystemModules/Communication/AckHandler.c:7:20: warning: comparison between pointer and integer [enabled by default]
+../src/SubSystemModules/Communication/AckHandler.c:16:5: warning: implicit declaration of function 'TransmitSplPacket' [-Wimplicit-function-declaration]
+Finished building: ../src/SubSystemModules/Communication/AckHandler.c
+ 
+Building file: ../src/SubSystemModules/Communication/CommandDictionary.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -std=c99 -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra  -g -std=c99 -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//satellite-subsystems/satellite-subsystems/include" -I"C:\ISIS\ein-mahel3\GlobusSatProject\src" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hcc/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/freertos/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hal/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/at91/include" -MMD -MP -MF"src/SubSystemModules/Communication/CommandDictionary.d" -MT"src/SubSystemModules/Communication/CommandDictionary.d" -c -o "src/SubSystemModules/Communication/CommandDictionary.o" "../src/SubSystemModules/Communication/CommandDictionary.c"
+../src/SubSystemModules/Communication/CommandDictionary.c: In function 'trxvu_command_router':
+../src/SubSystemModules/Communication/CommandDictionary.c:17:13: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/SubSystemModules/Communication/CommandDictionary.c:17:13: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/SubSystemModules/Communication/CommandDictionary.c:13:9: warning: unused variable 'err' [-Wunused-variable]
+../src/SubSystemModules/Communication/CommandDictionary.c:21:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/SubSystemModules/Communication/CommandDictionary.c
+ 
+Building file: ../src/SubSystemModules/Communication/SatCommandHandler.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -std=c99 -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra  -g -std=c99 -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//satellite-subsystems/satellite-subsystems/include" -I"C:\ISIS\ein-mahel3\GlobusSatProject\src" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hcc/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/freertos/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hal/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/at91/include" -MMD -MP -MF"src/SubSystemModules/Communication/SatCommandHandler.d" -MT"src/SubSystemModules/Communication/SatCommandHandler.d" -c -o "src/SubSystemModules/Communication/SatCommandHandler.o" "../src/SubSystemModules/Communication/SatCommandHandler.c"
+../src/SubSystemModules/Communication/SatCommandHandler.c:5:31: fatal error: CommandDictionary.h: No such file or directory
+compilation terminated.
+make: *** [src/SubSystemModules/Communication/SatCommandHandler.o] Error 1
+Building file: ../src/SubSystemModules/Communication/TRXVU.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -std=c99 -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra  -g -std=c99 -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//satellite-subsystems/satellite-subsystems/include" -I"C:\ISIS\ein-mahel3\GlobusSatProject\src" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hcc/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/freertos/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hal/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/at91/include" -MMD -MP -MF"src/SubSystemModules/Communication/TRXVU.d" -MT"src/SubSystemModules/Communication/TRXVU.d" -c -o "src/SubSystemModules/Communication/TRXVU.o" "../src/SubSystemModules/Communication/TRXVU.c"
+In file included from ../src/SubSystemModules/Communication/TRXVU.c:19:0:
+C:\ISIS\ein-mahel3\GlobusSatProject\src/TLM_management.h:59:16: warning: 'stopDump' defined but not used [-Wunused-variable]
+../src/SubSystemModules/Communication/TRXVU.c: In function 'TRX_Logic':
+../src/SubSystemModules/Communication/TRXVU.c:109:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/SubSystemModules/Communication/TRXVU.c
+ 
+Building file: ../src/InitSystem.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -std=c99 -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra  -g -std=c99 -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//satellite-subsystems/satellite-subsystems/include" -I"C:\ISIS\ein-mahel3\GlobusSatProject\src" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hcc/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/freertos/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hal/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/at91/include" -MMD -MP -MF"src/InitSystem.d" -MT"src/InitSystem.d" -c -o "src/InitSystem.o" "../src/InitSystem.c"
+../src/InitSystem.c:10:50: fatal error: SubSystemModules/PowerManagement/EPS.h: No such file or directory
+compilation terminated.
+make: *** [src/InitSystem.o] Error 1
+Building file: ../src/TLM_Management.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -std=c99 -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra  -g -std=c99 -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//satellite-subsystems/satellite-subsystems/include" -I"C:\ISIS\ein-mahel3\GlobusSatProject\src" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hcc/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/freertos/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hal/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/at91/include" -MMD -MP -MF"src/TLM_Management.d" -MT"src/TLM_Management.d" -c -o "src/TLM_Management.o" "../src/TLM_Management.c"
+../src/TLM_Management.c: In function 'InitializeFS':
+../src/TLM_Management.c:14:2: warning: implicit declaration of function 'hcc_mem_init' [-Wimplicit-function-declaration]
+../src/TLM_Management.c:16:2: warning: implicit declaration of function 'fs_init' [-Wimplicit-function-declaration]
+../src/TLM_Management.c:17:2: warning: implicit declaration of function 'ASSERT' [-Wimplicit-function-declaration]
+../src/TLM_Management.c:19:2: warning: implicit declaration of function 'f_enterFS' [-Wimplicit-function-declaration]
+In file included from ../src/TLM_Management.c:2:0:
+../src/TLM_Management.c: At top level:
+C:\ISIS\ein-mahel3\GlobusSatProject\src/TLM_management.h:59:16: warning: 'stopDump' defined but not used [-Wunused-variable]
+Finished building: ../src/TLM_Management.c
+ 
+Building file: ../src/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -std=c99 -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra  -g -std=c99 -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//satellite-subsystems/satellite-subsystems/include" -I"C:\ISIS\ein-mahel3\GlobusSatProject\src" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hcc/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/freertos/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hal/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/at91/include" -MMD -MP -MF"src/main.d" -MT"src/main.d" -c -o "src/main.o" "../src/main.c"
+../src/main.c:20:50: fatal error: SubSystemModules/PowerManagement/EPS.h: No such file or directory
+compilation terminated.
+make: *** [src/main.o] Error 1
+make: Target `all' not remade because of errors.
+16:18:50 **** Incremental Build of configuration Debug for project GlobusSatProject ****
+make -r -k all 
+Building file: ../src/SubSystemModules/Communication/SatCommandHandler.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -std=c99 -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra  -g -std=c99 -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//satellite-subsystems/satellite-subsystems/include" -I"C:\ISIS\ein-mahel3\GlobusSatProject\src" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hcc/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/freertos/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hal/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/at91/include" -MMD -MP -MF"src/SubSystemModules/Communication/SatCommandHandler.d" -MT"src/SubSystemModules/Communication/SatCommandHandler.d" -c -o "src/SubSystemModules/Communication/SatCommandHandler.o" "../src/SubSystemModules/Communication/SatCommandHandler.c"
+../src/SubSystemModules/Communication/SatCommandHandler.c:5:31: fatal error: CommandDictionary.h: No such file or directory
+compilation terminated.
+make: *** [src/SubSystemModules/Communication/SatCommandHandler.o] Error 1
+Building file: ../src/InitSystem.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -std=c99 -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra  -g -std=c99 -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//satellite-subsystems/satellite-subsystems/include" -I"C:\ISIS\ein-mahel3\GlobusSatProject\src" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hcc/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/freertos/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hal/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/at91/include" -MMD -MP -MF"src/InitSystem.d" -MT"src/InitSystem.d" -c -o "src/InitSystem.o" "../src/InitSystem.c"
+../src/InitSystem.c:10:50: fatal error: SubSystemModules/PowerManagement/EPS.h: No such file or directory
+compilation terminated.
+make: *** [src/InitSystem.o] Error 1
+Building file: ../src/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -std=c99 -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra  -g -std=c99 -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//satellite-subsystems/satellite-subsystems/include" -I"C:\ISIS\ein-mahel3\GlobusSatProject\src" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hcc/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/freertos/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hal/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/at91/include" -MMD -MP -MF"src/main.d" -MT"src/main.d" -c -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:25:0:
+../src/main.h:19:2: error: expected identifier or '(' before ')' token
+In file included from ../src/SubSystemModules/Housekepping/TelemetryCollector.h:6:0,
+                 from ../src/main.c:22:
+C:\ISIS\ein-mahel3\GlobusSatProject\src/TLM_management.h:59:16: warning: 'stopDump' defined but not used [-Wunused-variable]
+make: *** [src/main.o] Error 1
+make: Target `all' not remade because of errors.
+16:20:31 **** Incremental Build of configuration Debug for project GlobusSatProject ****
+make -r -k all 
+Building file: ../src/SubSystemModules/Communication/SatCommandHandler.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -std=c99 -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra  -g -std=c99 -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//satellite-subsystems/satellite-subsystems/include" -I"C:\ISIS\ein-mahel3\GlobusSatProject\src" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hcc/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/freertos/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hal/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/at91/include" -MMD -MP -MF"src/SubSystemModules/Communication/SatCommandHandler.d" -MT"src/SubSystemModules/Communication/SatCommandHandler.d" -c -o "src/SubSystemModules/Communication/SatCommandHandler.o" "../src/SubSystemModules/Communication/SatCommandHandler.c"
+../src/SubSystemModules/Communication/SatCommandHandler.c:5:31: fatal error: CommandDictionary.h: No such file or directory
+compilation terminated.
+make: *** [src/SubSystemModules/Communication/SatCommandHandler.o] Error 1
+Building file: ../src/InitSystem.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -std=c99 -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra  -g -std=c99 -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//satellite-subsystems/satellite-subsystems/include" -I"C:\ISIS\ein-mahel3\GlobusSatProject\src" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hcc/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/freertos/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hal/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/at91/include" -MMD -MP -MF"src/InitSystem.d" -MT"src/InitSystem.d" -c -o "src/InitSystem.o" "../src/InitSystem.c"
+In file included from ../src/InitSystem.c:15:0:
+../src/TLM_management.h:59:16: warning: 'stopDump' defined but not used [-Wunused-variable]
+Finished building: ../src/InitSystem.c
+ 
+Building file: ../src/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -std=c99 -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra  -g -std=c99 -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//satellite-subsystems/satellite-subsystems/include" -I"C:\ISIS\ein-mahel3\GlobusSatProject\src" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hcc/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/freertos/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hal/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/at91/include" -MMD -MP -MF"src/main.d" -MT"src/main.d" -c -o "src/main.o" "../src/main.c"
+In file included from ../src/SubSystemModules/Housekepping/TelemetryCollector.h:6:0,
+                 from ../src/main.c:22:
+C:\ISIS\ein-mahel3\GlobusSatProject\src/TLM_management.h:59:16: warning: 'stopDump' defined but not used [-Wunused-variable]
+Finished building: ../src/main.c
+ 
+make: Target `all' not remade because of errors.
+16:20:33 **** Build of configuration Debug for project hal-demo ****
+make -r -k all 
+Building file: ../src/Tests/ADCtest.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra -Werror  -g -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:\ISIS\ein-mahel3\hal\demo\src" -I"C:/ISIS/ein-mahel3/hal/demo/..//freertos/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hal/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//at91/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hcc/include" -MMD -MP -MF"src/Tests/ADCtest.d" -MT"src/Tests/ADCtest.d" -c -o "src/Tests/ADCtest.o" "../src/Tests/ADCtest.c"
+Finished building: ../src/Tests/ADCtest.c
+ 
+Building file: ../src/Tests/FloatingPointTest.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra -Werror  -g -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:\ISIS\ein-mahel3\hal\demo\src" -I"C:/ISIS/ein-mahel3/hal/demo/..//freertos/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hal/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//at91/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hcc/include" -MMD -MP -MF"src/Tests/FloatingPointTest.d" -MT"src/Tests/FloatingPointTest.d" -c -o "src/Tests/FloatingPointTest.o" "../src/Tests/FloatingPointTest.c"
+Finished building: ../src/Tests/FloatingPointTest.c
+ 
+Building file: ../src/Tests/I2CslaveTest.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra -Werror  -g -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:\ISIS\ein-mahel3\hal\demo\src" -I"C:/ISIS/ein-mahel3/hal/demo/..//freertos/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hal/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//at91/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hcc/include" -MMD -MP -MF"src/Tests/I2CslaveTest.d" -MT"src/Tests/I2CslaveTest.d" -c -o "src/Tests/I2CslaveTest.o" "../src/Tests/I2CslaveTest.c"
+Finished building: ../src/Tests/I2CslaveTest.c
+ 
+Building file: ../src/Tests/I2Ctest.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra -Werror  -g -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:\ISIS\ein-mahel3\hal\demo\src" -I"C:/ISIS/ein-mahel3/hal/demo/..//freertos/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hal/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//at91/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hcc/include" -MMD -MP -MF"src/Tests/I2Ctest.d" -MT"src/Tests/I2Ctest.d" -c -o "src/Tests/I2Ctest.o" "../src/Tests/I2Ctest.c"
+Finished building: ../src/Tests/I2Ctest.c
+ 
+Building file: ../src/Tests/LEDtest.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra -Werror  -g -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:\ISIS\ein-mahel3\hal\demo\src" -I"C:/ISIS/ein-mahel3/hal/demo/..//freertos/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hal/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//at91/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hcc/include" -MMD -MP -MF"src/Tests/LEDtest.d" -MT"src/Tests/LEDtest.d" -c -o "src/Tests/LEDtest.o" "../src/Tests/LEDtest.c"
+Finished building: ../src/Tests/LEDtest.c
+ 
+Building file: ../src/Tests/PWMtest.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra -Werror  -g -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:\ISIS\ein-mahel3\hal\demo\src" -I"C:/ISIS/ein-mahel3/hal/demo/..//freertos/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hal/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//at91/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hcc/include" -MMD -MP -MF"src/Tests/PWMtest.d" -MT"src/Tests/PWMtest.d" -c -o "src/Tests/PWMtest.o" "../src/Tests/PWMtest.c"
+Finished building: ../src/Tests/PWMtest.c
+ 
+Building file: ../src/Tests/PinTest.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra -Werror  -g -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:\ISIS\ein-mahel3\hal\demo\src" -I"C:/ISIS/ein-mahel3/hal/demo/..//freertos/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hal/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//at91/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hcc/include" -MMD -MP -MF"src/Tests/PinTest.d" -MT"src/Tests/PinTest.d" -c -o "src/Tests/PinTest.o" "../src/Tests/PinTest.c"
+Finished building: ../src/Tests/PinTest.c
+ 
+Building file: ../src/Tests/RTTAlarm.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra -Werror  -g -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:\ISIS\ein-mahel3\hal\demo\src" -I"C:/ISIS/ein-mahel3/hal/demo/..//freertos/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hal/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//at91/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hcc/include" -MMD -MP -MF"src/Tests/RTTAlarm.d" -MT"src/Tests/RTTAlarm.d" -c -o "src/Tests/RTTAlarm.o" "../src/Tests/RTTAlarm.c"
+Finished building: ../src/Tests/RTTAlarm.c
+ 
+Building file: ../src/Tests/SDCardTest.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra -Werror  -g -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:\ISIS\ein-mahel3\hal\demo\src" -I"C:/ISIS/ein-mahel3/hal/demo/..//freertos/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hal/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//at91/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hcc/include" -MMD -MP -MF"src/Tests/SDCardTest.d" -MT"src/Tests/SDCardTest.d" -c -o "src/Tests/SDCardTest.o" "../src/Tests/SDCardTest.c"
+Finished building: ../src/Tests/SDCardTest.c
+ 
+Building file: ../src/Tests/SPI_FRAM_RTCtest.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra -Werror  -g -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:\ISIS\ein-mahel3\hal\demo\src" -I"C:/ISIS/ein-mahel3/hal/demo/..//freertos/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hal/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//at91/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hcc/include" -MMD -MP -MF"src/Tests/SPI_FRAM_RTCtest.d" -MT"src/Tests/SPI_FRAM_RTCtest.d" -c -o "src/Tests/SPI_FRAM_RTCtest.o" "../src/Tests/SPI_FRAM_RTCtest.c"
+Finished building: ../src/Tests/SPI_FRAM_RTCtest.c
+ 
+Building file: ../src/Tests/SupervisorTest.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra -Werror  -g -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:\ISIS\ein-mahel3\hal\demo\src" -I"C:/ISIS/ein-mahel3/hal/demo/..//freertos/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hal/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//at91/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hcc/include" -MMD -MP -MF"src/Tests/SupervisorTest.d" -MT"src/Tests/SupervisorTest.d" -c -o "src/Tests/SupervisorTest.o" "../src/Tests/SupervisorTest.c"
+Finished building: ../src/Tests/SupervisorTest.c
+ 
+Building file: ../src/Tests/ThermalTest.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra -Werror  -g -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:\ISIS\ein-mahel3\hal\demo\src" -I"C:/ISIS/ein-mahel3/hal/demo/..//freertos/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hal/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//at91/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hcc/include" -MMD -MP -MF"src/Tests/ThermalTest.d" -MT"src/Tests/ThermalTest.d" -c -o "src/Tests/ThermalTest.o" "../src/Tests/ThermalTest.c"
+Finished building: ../src/Tests/ThermalTest.c
+ 
+Building file: ../src/Tests/TimeTest.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra -Werror  -g -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:\ISIS\ein-mahel3\hal\demo\src" -I"C:/ISIS/ein-mahel3/hal/demo/..//freertos/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hal/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//at91/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hcc/include" -MMD -MP -MF"src/Tests/TimeTest.d" -MT"src/Tests/TimeTest.d" -c -o "src/Tests/TimeTest.o" "../src/Tests/TimeTest.c"
+Finished building: ../src/Tests/TimeTest.c
+ 
+Building file: ../src/Tests/UARTtest.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra -Werror  -g -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:\ISIS\ein-mahel3\hal\demo\src" -I"C:/ISIS/ein-mahel3/hal/demo/..//freertos/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hal/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//at91/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hcc/include" -MMD -MP -MF"src/Tests/UARTtest.d" -MT"src/Tests/UARTtest.d" -c -o "src/Tests/UARTtest.o" "../src/Tests/UARTtest.c"
+Finished building: ../src/Tests/UARTtest.c
+ 
+Building file: ../src/Tests/USBdeviceTest.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra -Werror  -g -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:\ISIS\ein-mahel3\hal\demo\src" -I"C:/ISIS/ein-mahel3/hal/demo/..//freertos/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hal/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//at91/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hcc/include" -MMD -MP -MF"src/Tests/USBdeviceTest.d" -MT"src/Tests/USBdeviceTest.d" -c -o "src/Tests/USBdeviceTest.o" "../src/Tests/USBdeviceTest.c"
+Finished building: ../src/Tests/USBdeviceTest.c
+ 
+Building file: ../src/Tests/boardTest.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra -Werror  -g -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:\ISIS\ein-mahel3\hal\demo\src" -I"C:/ISIS/ein-mahel3/hal/demo/..//freertos/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hal/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//at91/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hcc/include" -MMD -MP -MF"src/Tests/boardTest.d" -MT"src/Tests/boardTest.d" -c -o "src/Tests/boardTest.o" "../src/Tests/boardTest.c"
+Finished building: ../src/Tests/boardTest.c
+ 
+Building file: ../src/Tests/checksumTest.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra -Werror  -g -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:\ISIS\ein-mahel3\hal\demo\src" -I"C:/ISIS/ein-mahel3/hal/demo/..//freertos/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hal/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//at91/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hcc/include" -MMD -MP -MF"src/Tests/checksumTest.d" -MT"src/Tests/checksumTest.d" -c -o "src/Tests/checksumTest.o" "../src/Tests/checksumTest.c"
+Finished building: ../src/Tests/checksumTest.c
+ 
+Building file: ../src/Demo/demo_sd.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra -Werror  -g -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:\ISIS\ein-mahel3\hal\demo\src" -I"C:/ISIS/ein-mahel3/hal/demo/..//freertos/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hal/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//at91/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hcc/include" -MMD -MP -MF"src/Demo/demo_sd.d" -MT"src/Demo/demo_sd.d" -c -o "src/Demo/demo_sd.o" "../src/Demo/demo_sd.c"
+Finished building: ../src/Demo/demo_sd.c
+ 
+Building file: ../src/Demo/demo_uart.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra -Werror  -g -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:\ISIS\ein-mahel3\hal\demo\src" -I"C:/ISIS/ein-mahel3/hal/demo/..//freertos/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hal/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//at91/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hcc/include" -MMD -MP -MF"src/Demo/demo_uart.d" -MT"src/Demo/demo_uart.d" -c -o "src/Demo/demo_uart.o" "../src/Demo/demo_uart.c"
+Finished building: ../src/Demo/demo_uart.c
+ 
+Building file: ../src/example-aborthandler.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra -Werror  -g -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:\ISIS\ein-mahel3\hal\demo\src" -I"C:/ISIS/ein-mahel3/hal/demo/..//freertos/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hal/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//at91/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hcc/include" -MMD -MP -MF"src/example-aborthandler.d" -MT"src/example-aborthandler.d" -c -o "src/example-aborthandler.o" "../src/example-aborthandler.c"
+Finished building: ../src/example-aborthandler.c
+ 
+Building file: ../src/freertos_hooks.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra -Werror  -g -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:\ISIS\ein-mahel3\hal\demo\src" -I"C:/ISIS/ein-mahel3/hal/demo/..//freertos/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hal/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//at91/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hcc/include" -MMD -MP -MF"src/freertos_hooks.d" -MT"src/freertos_hooks.d" -c -o "src/freertos_hooks.o" "../src/freertos_hooks.c"
+Finished building: ../src/freertos_hooks.c
+ 
+Building file: ../src/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra -Werror  -g -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:\ISIS\ein-mahel3\hal\demo\src" -I"C:/ISIS/ein-mahel3/hal/demo/..//freertos/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hal/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//at91/include" -I"C:/ISIS/ein-mahel3/hal/demo/..//hcc/include" -MMD -MP -MF"src/main.d" -MT"src/main.d" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: hal-demo.elf
+Invoking: Cross ARM C Linker
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra -Werror  -g -T C:/ISIS/ein-mahel3/hal/demo/..//at91/linker-scripts/sdram.lds -nostartfiles -Xlinker --gc-sections -L"C:/ISIS/ein-mahel3/hal/demo/..//at91/lib" -L"C:/ISIS/ein-mahel3/hal/demo/..//freertos/lib" -L"C:/ISIS/ein-mahel3/hal/demo/..//hal/lib" -L"C:/ISIS/ein-mahel3/hal/demo/..//hcc/lib" -Wl,-Map,"hal-demo.map" -lc -o "hal-demo.elf"  ./src/Tests/ADCtest.o ./src/Tests/FloatingPointTest.o ./src/Tests/I2CslaveTest.o ./src/Tests/I2Ctest.o ./src/Tests/LEDtest.o ./src/Tests/PWMtest.o ./src/Tests/PinTest.o ./src/Tests/RTTAlarm.o ./src/Tests/SDCardTest.o ./src/Tests/SPI_FRAM_RTCtest.o ./src/Tests/SupervisorTest.o ./src/Tests/ThermalTest.o ./src/Tests/TimeTest.o ./src/Tests/UARTtest.o ./src/Tests/USBdeviceTest.o ./src/Tests/boardTest.o ./src/Tests/checksumTest.o  ./src/Demo/demo_sd.o ./src/Demo/demo_uart.o  ./src/example-aborthandler.o ./src/freertos_hooks.o ./src/main.o   -lHCCD -lHALD -lFreeRTOSD -lAt91D
+Finished building target: hal-demo.elf
+ 
+Invoking: Cross ARM GNU Create Flash Image
+arm-none-eabi-objcopy -O binary "hal-demo.elf"  "hal-demo.bin"
+Finished building: hal-demo.bin
+ 
+Invoking: Cross ARM GNU Print Size
+arm-none-eabi-size --format=berkeley "hal-demo.elf"
+   text	   data	    bss	    dec	    hex	filename
+ 350780	     12	 450264	 801056	  c3920	hal-demo.elf
+Finished building: hal-demo.siz
+ 
+16:20:43 **** Build of configuration Debug for project satellite-subsystems-demo ****
+make -r -k all 
+Building file: ../src/Demos/GomEPSdemo.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra  -g -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:\ISIS\ein-mahel3\satellite-subsystems\demo\src" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/at91/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/hal/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/freertos/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/hcc/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/..//satellite-subsystems/include" -MMD -MP -MF"src/Demos/GomEPSdemo.d" -MT"src/Demos/GomEPSdemo.d" -c -o "src/Demos/GomEPSdemo.o" "../src/Demos/GomEPSdemo.c"
+Finished building: ../src/Demos/GomEPSdemo.c
+ 
+Building file: ../src/Demos/IsisAntSdemo.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra  -g -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:\ISIS\ein-mahel3\satellite-subsystems\demo\src" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/at91/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/hal/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/freertos/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/hcc/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/..//satellite-subsystems/include" -MMD -MP -MF"src/Demos/IsisAntSdemo.d" -MT"src/Demos/IsisAntSdemo.d" -c -o "src/Demos/IsisAntSdemo.o" "../src/Demos/IsisAntSdemo.c"
+Finished building: ../src/Demos/IsisAntSdemo.c
+ 
+Building file: ../src/Demos/IsisHSTxSdemo.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra  -g -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:\ISIS\ein-mahel3\satellite-subsystems\demo\src" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/at91/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/hal/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/freertos/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/hcc/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/..//satellite-subsystems/include" -MMD -MP -MF"src/Demos/IsisHSTxSdemo.d" -MT"src/Demos/IsisHSTxSdemo.d" -c -o "src/Demos/IsisHSTxSdemo.o" "../src/Demos/IsisHSTxSdemo.c"
+Finished building: ../src/Demos/IsisHSTxSdemo.c
+ 
+Building file: ../src/Demos/IsisMTQv1demo.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra  -g -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:\ISIS\ein-mahel3\satellite-subsystems\demo\src" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/at91/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/hal/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/freertos/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/hcc/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/..//satellite-subsystems/include" -MMD -MP -MF"src/Demos/IsisMTQv1demo.d" -MT"src/Demos/IsisMTQv1demo.d" -c -o "src/Demos/IsisMTQv1demo.o" "../src/Demos/IsisMTQv1demo.c"
+Finished building: ../src/Demos/IsisMTQv1demo.c
+ 
+Building file: ../src/Demos/IsisMTQv2demo.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra  -g -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:\ISIS\ein-mahel3\satellite-subsystems\demo\src" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/at91/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/hal/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/freertos/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/hcc/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/..//satellite-subsystems/include" -MMD -MP -MF"src/Demos/IsisMTQv2demo.d" -MT"src/Demos/IsisMTQv2demo.d" -c -o "src/Demos/IsisMTQv2demo.o" "../src/Demos/IsisMTQv2demo.c"
+Finished building: ../src/Demos/IsisMTQv2demo.c
+ 
+Building file: ../src/Demos/IsisSPdemo.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra  -g -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:\ISIS\ein-mahel3\satellite-subsystems\demo\src" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/at91/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/hal/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/freertos/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/hcc/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/..//satellite-subsystems/include" -MMD -MP -MF"src/Demos/IsisSPdemo.d" -MT"src/Demos/IsisSPdemo.d" -c -o "src/Demos/IsisSPdemo.o" "../src/Demos/IsisSPdemo.c"
+Finished building: ../src/Demos/IsisSPdemo.c
+ 
+Building file: ../src/Demos/IsisSPv2demo.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra  -g -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:\ISIS\ein-mahel3\satellite-subsystems\demo\src" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/at91/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/hal/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/freertos/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/hcc/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/..//satellite-subsystems/include" -MMD -MP -MF"src/Demos/IsisSPv2demo.d" -MT"src/Demos/IsisSPv2demo.d" -c -o "src/Demos/IsisSPv2demo.o" "../src/Demos/IsisSPv2demo.c"
+Finished building: ../src/Demos/IsisSPv2demo.c
+ 
+Building file: ../src/Demos/IsisTRXUVdemo.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra  -g -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:\ISIS\ein-mahel3\satellite-subsystems\demo\src" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/at91/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/hal/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/freertos/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/hcc/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/..//satellite-subsystems/include" -MMD -MP -MF"src/Demos/IsisTRXUVdemo.d" -MT"src/Demos/IsisTRXUVdemo.d" -c -o "src/Demos/IsisTRXUVdemo.o" "../src/Demos/IsisTRXUVdemo.c"
+Finished building: ../src/Demos/IsisTRXUVdemo.c
+ 
+Building file: ../src/Demos/IsisTRXVUdemo.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra  -g -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:\ISIS\ein-mahel3\satellite-subsystems\demo\src" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/at91/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/hal/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/freertos/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/hcc/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/..//satellite-subsystems/include" -MMD -MP -MF"src/Demos/IsisTRXVUdemo.d" -MT"src/Demos/IsisTRXVUdemo.d" -c -o "src/Demos/IsisTRXVUdemo.o" "../src/Demos/IsisTRXVUdemo.c"
+../src/Demos/IsisTRXVUdemo.c:98:16: warning: 'vutc_sendInputTest' defined but not used [-Wunused-function]
+Finished building: ../src/Demos/IsisTRXVUdemo.c
+ 
+Building file: ../src/Demos/ScsGeckoDemo.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra  -g -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:\ISIS\ein-mahel3\satellite-subsystems\demo\src" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/at91/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/hal/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/freertos/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/hcc/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/..//satellite-subsystems/include" -MMD -MP -MF"src/Demos/ScsGeckoDemo.d" -MT"src/Demos/ScsGeckoDemo.d" -c -o "src/Demos/ScsGeckoDemo.o" "../src/Demos/ScsGeckoDemo.c"
+Finished building: ../src/Demos/ScsGeckoDemo.c
+ 
+Building file: ../src/Demos/common.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra  -g -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:\ISIS\ein-mahel3\satellite-subsystems\demo\src" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/at91/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/hal/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/freertos/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/hcc/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/..//satellite-subsystems/include" -MMD -MP -MF"src/Demos/common.d" -MT"src/Demos/common.d" -c -o "src/Demos/common.o" "../src/Demos/common.c"
+Finished building: ../src/Demos/common.c
+ 
+Building file: ../src/Demos/cspaceADCSdemo.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra  -g -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:\ISIS\ein-mahel3\satellite-subsystems\demo\src" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/at91/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/hal/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/freertos/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/hcc/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/..//satellite-subsystems/include" -MMD -MP -MF"src/Demos/cspaceADCSdemo.d" -MT"src/Demos/cspaceADCSdemo.d" -c -o "src/Demos/cspaceADCSdemo.o" "../src/Demos/cspaceADCSdemo.c"
+Finished building: ../src/Demos/cspaceADCSdemo.c
+ 
+Building file: ../src/Demos/input.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra  -g -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:\ISIS\ein-mahel3\satellite-subsystems\demo\src" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/at91/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/hal/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/freertos/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/hcc/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/..//satellite-subsystems/include" -MMD -MP -MF"src/Demos/input.d" -MT"src/Demos/input.d" -c -o "src/Demos/input.o" "../src/Demos/input.c"
+Finished building: ../src/Demos/input.c
+ 
+Building file: ../src/Demos/isis_ants2_demo.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra  -g -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:\ISIS\ein-mahel3\satellite-subsystems\demo\src" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/at91/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/hal/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/freertos/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/hcc/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/..//satellite-subsystems/include" -MMD -MP -MF"src/Demos/isis_ants2_demo.d" -MT"src/Demos/isis_ants2_demo.d" -c -o "src/Demos/isis_ants2_demo.o" "../src/Demos/isis_ants2_demo.c"
+Finished building: ../src/Demos/isis_ants2_demo.c
+ 
+Building file: ../src/Demos/isis_eps_demo.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra  -g -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:\ISIS\ein-mahel3\satellite-subsystems\demo\src" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/at91/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/hal/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/freertos/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/hcc/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/..//satellite-subsystems/include" -MMD -MP -MF"src/Demos/isis_eps_demo.d" -MT"src/Demos/isis_eps_demo.d" -c -o "src/Demos/isis_eps_demo.o" "../src/Demos/isis_eps_demo.c"
+Finished building: ../src/Demos/isis_eps_demo.c
+ 
+Building file: ../src/Demos/tausat2_pdhudemo.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra  -g -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:\ISIS\ein-mahel3\satellite-subsystems\demo\src" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/at91/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/hal/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/freertos/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/hcc/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/..//satellite-subsystems/include" -MMD -MP -MF"src/Demos/tausat2_pdhudemo.d" -MT"src/Demos/tausat2_pdhudemo.d" -c -o "src/Demos/tausat2_pdhudemo.o" "../src/Demos/tausat2_pdhudemo.c"
+Finished building: ../src/Demos/tausat2_pdhudemo.c
+ 
+Building file: ../src/Demos/trxvu_frame_ready.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra  -g -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:\ISIS\ein-mahel3\satellite-subsystems\demo\src" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/at91/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/hal/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/freertos/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/hcc/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/..//satellite-subsystems/include" -MMD -MP -MF"src/Demos/trxvu_frame_ready.d" -MT"src/Demos/trxvu_frame_ready.d" -c -o "src/Demos/trxvu_frame_ready.o" "../src/Demos/trxvu_frame_ready.c"
+Finished building: ../src/Demos/trxvu_frame_ready.c
+ 
+Building file: ../src/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra  -g -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:\ISIS\ein-mahel3\satellite-subsystems\demo\src" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/at91/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/hal/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/freertos/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/hcc/include" -I"C:/ISIS/ein-mahel3/satellite-subsystems/demo/..//satellite-subsystems/include" -MMD -MP -MF"src/main.d" -MT"src/main.d" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: satellite-subsystems-demo.elf
+Invoking: Cross ARM C Linker
+arm-none-eabi-gcc -mcpu=arm926ej-s -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra  -g -T C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/at91/linker-scripts/sdram.lds -nostartfiles -Xlinker --gc-sections -L"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/at91/lib" -L"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/freertos/lib" -L"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/hal/lib" -L"C:/ISIS/ein-mahel3/satellite-subsystems/demo/../..//hal/hcc/lib" -L"C:/ISIS/ein-mahel3/satellite-subsystems/demo/..//satellite-subsystems/lib" -Wl,-Map,"satellite-subsystems-demo.map" -lc -o "satellite-subsystems-demo.elf"  ./src/Demos/GomEPSdemo.o ./src/Demos/IsisAntSdemo.o ./src/Demos/IsisHSTxSdemo.o ./src/Demos/IsisMTQv1demo.o ./src/Demos/IsisMTQv2demo.o ./src/Demos/IsisSPdemo.o ./src/Demos/IsisSPv2demo.o ./src/Demos/IsisTRXUVdemo.o ./src/Demos/IsisTRXVUdemo.o ./src/Demos/ScsGeckoDemo.o ./src/Demos/common.o ./src/Demos/cspaceADCSdemo.o ./src/Demos/input.o ./src/Demos/isis_ants2_demo.o ./src/Demos/isis_eps_demo.o ./src/Demos/tausat2_pdhudemo.o ./src/Demos/trxvu_frame_ready.o  ./src/main.o   -lSatelliteSubsystemsD -lm -lHCCD -lHALD -lFreeRTOSD -lAt91D
+Finished building target: satellite-subsystems-demo.elf
+ 
+Invoking: Cross ARM GNU Create Flash Image
+arm-none-eabi-objcopy -O binary "satellite-subsystems-demo.elf"  "satellite-subsystems-demo.bin"
+Finished building: satellite-subsystems-demo.bin
+ 
+Invoking: Cross ARM GNU Print Size
+arm-none-eabi-size --format=berkeley "satellite-subsystems-demo.elf"
+   text	   data	    bss	    dec	    hex	filename
+ 204152	     12	   1676	 205840	  32410	satellite-subsystems-demo.elf
+Finished building: satellite-subsystems-demo.siz
+ 
+16:21:09 **** Incremental Build of configuration Debug for project GlobusSatProject ****
+make -r -k all 
+Building file: ../src/SubSystemModules/Communication/SatCommandHandler.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -std=c99 -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra  -g -std=c99 -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//satellite-subsystems/satellite-subsystems/include" -I"C:\ISIS\ein-mahel3\GlobusSatProject\src" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hcc/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/freertos/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hal/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/at91/include" -MMD -MP -MF"src/SubSystemModules/Communication/SatCommandHandler.d" -MT"src/SubSystemModules/Communication/SatCommandHandler.d" -c -o "src/SubSystemModules/Communication/SatCommandHandler.o" "../src/SubSystemModules/Communication/SatCommandHandler.c"
+../src/SubSystemModules/Communication/SatCommandHandler.c:5:31: fatal error: CommandDictionary.h: No such file or directory
+compilation terminated.
+make: *** [src/SubSystemModules/Communication/SatCommandHandler.o] Error 1
+make: Target `all' not remade because of errors.
+16:22:04 **** Incremental Build of configuration Debug for project GlobusSatProject ****
+make -r -k all 
+Building file: ../src/SubSystemModules/Communication/SatCommandHandler.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -std=c99 -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra  -g -std=c99 -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//satellite-subsystems/satellite-subsystems/include" -I"C:\ISIS\ein-mahel3\GlobusSatProject\src" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hcc/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/freertos/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hal/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/at91/include" -MMD -MP -MF"src/SubSystemModules/Communication/SatCommandHandler.d" -MT"src/SubSystemModules/Communication/SatCommandHandler.d" -c -o "src/SubSystemModules/Communication/SatCommandHandler.o" "../src/SubSystemModules/Communication/SatCommandHandler.c"
+../src/SubSystemModules/Communication/SatCommandHandler.c: In function 'ParseDataToCommand':
+../src/SubSystemModules/Communication/SatCommandHandler.c:28:17: error: 'CUBE_SAT_ID' undeclared (first use in this function)
+../src/SubSystemModules/Communication/SatCommandHandler.c:28:17: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/SubSystemModules/Communication/SatCommandHandler.o] Error 1
+make: Target `all' not remade because of errors.
+16:22:04 **** Incremental Build of configuration Debug for project hal-demo ****
+make -r -k all 
+Invoking: Cross ARM GNU Print Size
+arm-none-eabi-size --format=berkeley "hal-demo.elf"
+   text	   data	    bss	    dec	    hex	filename
+ 350780	     12	 450264	 801056	  c3920	hal-demo.elf
+Finished building: hal-demo.siz
+ 
+16:22:05 **** Incremental Build of configuration Debug for project satellite-subsystems-demo ****
+make -r -k all 
+Invoking: Cross ARM GNU Print Size
+arm-none-eabi-size --format=berkeley "satellite-subsystems-demo.elf"
+   text	   data	    bss	    dec	    hex	filename
+ 204152	     12	   1676	 205840	  32410	satellite-subsystems-demo.elf
+Finished building: satellite-subsystems-demo.siz
+ 
+16:22:44 **** Incremental Build of configuration Debug for project GlobusSatProject ****
+make -r -k all 
+Building file: ../src/SubSystemModules/Communication/SatCommandHandler.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -std=c99 -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra  -g -std=c99 -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//satellite-subsystems/satellite-subsystems/include" -I"C:\ISIS\ein-mahel3\GlobusSatProject\src" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hcc/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/freertos/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hal/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/at91/include" -MMD -MP -MF"src/SubSystemModules/Communication/SatCommandHandler.d" -MT"src/SubSystemModules/Communication/SatCommandHandler.d" -c -o "src/SubSystemModules/Communication/SatCommandHandler.o" "../src/SubSystemModules/Communication/SatCommandHandler.c"
+../src/SubSystemModules/Communication/SatCommandHandler.c: In function 'ParseDataToCommand':
+../src/SubSystemModules/Communication/SatCommandHandler.c:20:19: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'b'
+../src/SubSystemModules/Communication/SatCommandHandler.c:20:19: error: 'b' undeclared (first use in this function)
+../src/SubSystemModules/Communication/SatCommandHandler.c:20:19: note: each undeclared identifier is reported only once for each function it appears in
+../src/SubSystemModules/Communication/SatCommandHandler.c:21:17: error: 'id' undeclared (first use in this function)
+../src/SubSystemModules/Communication/SatCommandHandler.c:55:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/SubSystemModules/Communication/SatCommandHandler.o] Error 1
+make: Target `all' not remade because of errors.
+16:22:45 **** Incremental Build of configuration Debug for project hal-demo ****
+make -r -k all 
+Invoking: Cross ARM GNU Print Size
+arm-none-eabi-size --format=berkeley "hal-demo.elf"
+   text	   data	    bss	    dec	    hex	filename
+ 350780	     12	 450264	 801056	  c3920	hal-demo.elf
+Finished building: hal-demo.siz
+ 
+16:22:45 **** Incremental Build of configuration Debug for project satellite-subsystems-demo ****
+make -r -k all 
+Invoking: Cross ARM GNU Print Size
+arm-none-eabi-size --format=berkeley "satellite-subsystems-demo.elf"
+   text	   data	    bss	    dec	    hex	filename
+ 204152	     12	   1676	 205840	  32410	satellite-subsystems-demo.elf
+Finished building: satellite-subsystems-demo.siz
+ 
+16:23:05 **** Incremental Build of configuration Debug for project GlobusSatProject ****
+make -r -k all 
+Building file: ../src/SubSystemModules/Communication/SatCommandHandler.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=arm926ej-s -std=c99 -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra  -g -std=c99 -Dsdram -Dat91sam9g20 -DTRACE_LEVEL=5 -DDEBUG=1 -D'BASE_REVISION_NUMBER=' -D'BASE_REVISION_HASH_SHORT=' -D'BASE_REVISION_HASH=' -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//satellite-subsystems/satellite-subsystems/include" -I"C:\ISIS\ein-mahel3\GlobusSatProject\src" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hcc/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/freertos/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hal/include" -I"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/at91/include" -MMD -MP -MF"src/SubSystemModules/Communication/SatCommandHandler.d" -MT"src/SubSystemModules/Communication/SatCommandHandler.d" -c -o "src/SubSystemModules/Communication/SatCommandHandler.o" "../src/SubSystemModules/Communication/SatCommandHandler.c"
+Finished building: ../src/SubSystemModules/Communication/SatCommandHandler.c
+ 
+Building target: GlobusSatProject.elf
+Invoking: Cross ARM C Linker
+arm-none-eabi-gcc -mcpu=arm926ej-s -std=c99 -O0 -fmessage-length=0 -ffunction-sections -Wall -Wextra  -g -std=c99 -T C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/at91/linker-scripts/sdram.lds -nostartfiles -Xlinker --gc-sections -L"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/at91/lib" -L"C:/ISIS/ein-mahel3/GlobusSatProject/..//satellite-subsystems/satellite-subsystems/lib" -L"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hcc/lib" -L"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/freertos/lib" -L"C:/ISIS/ein-mahel3/GlobusSatProject/..//hal/hal/lib" -Wl,-Map,"GlobusSatProject.map" -lc -u _printf_float -u _scanf_float -o "GlobusSatProject.elf"  ./src/SubSystemModules/PowerManagment/EPS.o  ./src/SubSystemModules/Communication/AckHandler.o ./src/SubSystemModules/Communication/CommandDictionary.o ./src/SubSystemModules/Communication/SatCommandHandler.o ./src/SubSystemModules/Communication/TRXVU.o  ./src/InitSystem.o ./src/TLM_Management.o ./src/main.o   -lHALD -lHCCD -lSatelliteSubsystemsD -lFreeRTOSD -lAt91D
+./src/SubSystemModules/PowerManagment/EPS.o: In function `GomEPSInit':
+C:\ISIS\ein-mahel3\GlobusSatProject\Debug/../src/SubSystemModules/PowerManagment/EPS.c:43: undefined reference to `TRACE_ERROR'
+./src/SubSystemModules/Communication/SatCommandHandler.o: In function `AssembleCommand':
+C:\ISIS\ein-mahel3\GlobusSatProject\Debug/../src/SubSystemModules/Communication/SatCommandHandler.c:71: undefined reference to `logError'
+./src/SubSystemModules/Communication/TRXVU.o: In function `InitTrxvu':
+C:\ISIS\ein-mahel3\GlobusSatProject\Debug/../src/SubSystemModules/Communication/TRXVU.c:79: undefined reference to `logError'
+C:\ISIS\ein-mahel3\GlobusSatProject\Debug/../src/SubSystemModules/Communication/TRXVU.c:88: undefined reference to `logError'
+./src/SubSystemModules/Communication/TRXVU.o: In function `GetNumberOfFramesInBuffer':
+C:\ISIS\ein-mahel3\GlobusSatProject\Debug/../src/SubSystemModules/Communication/TRXVU.c:113: undefined reference to `logError'
+./src/SubSystemModules/Communication/TRXVU.o: In function `GetOnlineCommand':
+C:\ISIS\ein-mahel3\GlobusSatProject\Debug/../src/SubSystemModules/Communication/TRXVU.c:123: undefined reference to `logError'
+./src/InitSystem.o:C:\ISIS\ein-mahel3\GlobusSatProject\Debug/../src/InitSystem.c:31: more undefined references to `logError' follow
+./src/InitSystem.o: In function `InitSubsystems':
+C:\ISIS\ein-mahel3\GlobusSatProject\Debug/../src/InitSystem.c:68: undefined reference to `InitSavePeriodTimes'
+./src/TLM_Management.o: In function `InitializeFS':
+C:\ISIS\ein-mahel3\GlobusSatProject\Debug/../src/TLM_Management.c:16: undefined reference to `fs_init'
+C:\ISIS\ein-mahel3\GlobusSatProject\Debug/../src/TLM_Management.c:17: undefined reference to `ASSERT'
+C:\ISIS\ein-mahel3\GlobusSatProject\Debug/../src/TLM_Management.c:20: undefined reference to `ASSERT'
+collect2.exe: error: ld returned 1 exit status
+make: *** [GlobusSatProject.elf] Error 1
+make: Target `all' not remade because of errors.
+16:23:07 **** Incremental Build of configuration Debug for project hal-demo ****
+make -r -k all 
+Invoking: Cross ARM GNU Print Size
+arm-none-eabi-size --format=berkeley "hal-demo.elf"
+   text	   data	    bss	    dec	    hex	filename
+ 350780	     12	 450264	 801056	  c3920	hal-demo.elf
+Finished building: hal-demo.siz
+ 
+16:23:07 **** Incremental Build of configuration Debug for project satellite-subsystems-demo ****
+make -r -k all 
+Invoking: Cross ARM GNU Print Size
+arm-none-eabi-size --format=berkeley "satellite-subsystems-demo.elf"
+   text	   data	    bss	    dec	    hex	filename
+ 204152	     12	   1676	 205840	  32410	satellite-subsystems-demo.elf
+Finished building: satellite-subsystems-demo.siz
+ 

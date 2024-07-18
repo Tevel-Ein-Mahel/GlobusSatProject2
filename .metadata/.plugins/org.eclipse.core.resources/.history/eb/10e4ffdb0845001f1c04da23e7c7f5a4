@@ -17,7 +17,7 @@ int ParseDataToCommand(unsigned char * data, sat_packet_t *cmd)
 
 		unsigned int offset = 0;
 
-		unsigned int id = 0;
+		unsigned int id b= 0;
 		err = memcpy(&id,data,sizeof(id));
 		if (NULL == err) {
 			return execution_error;

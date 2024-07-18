@@ -17,7 +17,7 @@
 #include <hcc/api_fat.h>
 
 #include "GlobalStandards.h"
-#include "SubSystemModules/PowerManagment/EPS.h"
+#include "SubSystemModules/PowerManagement/EPS.h"
 #include "SubSystemModules/Communication/TRXVU.h"
 #include "SubSystemModules/Housekepping/TelemetryCollector.h"
 #include "SubSystemModules/Maintenance/Maintenance.h"

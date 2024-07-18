@@ -7,7 +7,7 @@
 #include <at91/utility/exithandler.h>
 #include <string.h>
 #include "GlobalStandards.h"
-#include "SubSystemModules/PowerManagment/EPS.h"
+#include "SubSystemModules/PowerManagement/EPS.h"
 #include "SubSystemModules/Communication/TRXVU.h"
 #include "SubSystemModules/Communication/SubsystemCommands/TRXVU_Commands.h"
 #include "SubSystemModules/Maintenance/Maintenance.h"
