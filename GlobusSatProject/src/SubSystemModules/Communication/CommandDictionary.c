@@ -14,9 +14,8 @@ int trxvu_command_router(sat_packet_t *cmd)
     switch (cmd->cmd_subtype)
     {
         case 8:
-            printf("DDD");
+            printf("Ground control to major tom");
             break;
-
     }
 
 }
