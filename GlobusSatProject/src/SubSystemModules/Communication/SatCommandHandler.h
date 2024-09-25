@@ -14,6 +14,7 @@
 #define MAX_NUM_OF_DELAYED_CMD (100)
 #define YCUBE_SAT_ID	2
 #define ALL_SAT_ID 		0
+#define MAHEL_SAT_ID 6
 
 
 typedef enum __attribute__ ((__packed__)) CMD_ERR{
