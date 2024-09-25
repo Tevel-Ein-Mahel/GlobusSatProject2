@@ -126,7 +126,6 @@ static Boolean vutc_sendInputTest(void)
 		if ((avalFrames != 0)&&(avalFrames != 255))
 		{
 			printf("\r\n Number of frames in the buffer: %d  \r\n", avalFrames);
-			txCounter++;
 		}
 		else
 		{
@@ -489,9 +488,10 @@ static Boolean selectAndExecuteTRXVUDemoTest(void)
 	printf("\t 10) (revD) Get command frame by interrupt \n\r");
 	printf("\t 11) (revD) Get receiver telemetry \n\r");
 	printf("\t 12) (revD) Get transmitter telemetry \n\r");
-	printf("\t 13) Return to main menu \n\r");
+	printf("\t 13) Send Input Test \n\r");
+	printf("\t 14) Return to main menu \n\r");
 
-	while(UTIL_DbguGetIntegerMinMax(&selection, 1, 13) == 0);
+	while(UTIL_DbguGetIntegerMinMax(&selection, 1, 14) == 0);
 
 	switch(selection) {
 	case 1:
@@ -531,6 +531,9 @@ static Boolean selectAndExecuteTRXVUDemoTest(void)
 		offerMoreTests = vutc_getTxTelemTest_revD();
 		break;
 	case 13:
+		offerMoreTests = vutc_sendInputTest();
+		break;
+	case 14:
 		offerMoreTests = FALSE;
 		break;
 
