@@ -122,6 +122,7 @@ static Boolean vutc_sendDefClSignTestByInput(void)
 		}
 	}
 
+
 	return TRUE;
 }
 
