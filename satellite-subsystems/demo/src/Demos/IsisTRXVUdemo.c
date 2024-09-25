@@ -94,6 +94,37 @@ static Boolean vutc_sendDefClSignTest(void)
 	return TRUE;
 }
 
+static Boolean vutc_sendDefClSignTestByInput(void)
+{
+	//Buffers and variables definition
+	unsigned char testBuffer1[10]  = {0x31,0x32,0x33,0x34,0x35,0x36,0x37,0x38,0x39,0x40};
+	unsigned char txCounter = 0;
+	unsigned char avalFrames = 0;
+	unsigned int timeoutCounter = 0;
+
+	int input = 0;
+	while(UTIL_DbguGetIntegerMinMax(&input, 1, 500)==0);
+
+	while(txCounter < input && timeoutCounter < 5)
+	{
+		printf("\r\n Transmission of single buffers with default callsign. AX25 Format. \r\n");
+		print_error(IsisTrxvu_tcSendAX25DefClSign(0, testBuffer1, 10, &avalFrames));
+
+		if ((avalFrames != 0)&&(avalFrames != 255))
+		{
+			printf("\r\n Number of frames in the buffer: %d  \r\n", avalFrames);
+			txCounter++;
+		}
+		else
+		{
+			vTaskDelay(100 / portTICK_RATE_MS);
+			timeoutCounter++;
+		}
+	}
+
+	return TRUE;
+}
+
 /* Test 5*/
 static Boolean vutc_sendInputTest(void)
 {
